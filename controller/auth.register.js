@@ -1,7 +1,6 @@
 const User = require("../Model/User")
 const bcrypt = require("bcryptjs")
 
-
 const RegisterAuth = async(req, res) => {
     const { name, email, password } = req.body
     if(!name || !email || !password) {
@@ -27,4 +26,5 @@ const RegisterAuth = async(req, res) => {
     }
 
 }
+
 module.exports = RegisterAuth
